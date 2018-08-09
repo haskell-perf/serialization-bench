@@ -1,2 +1,2 @@
 clean:
-	 find . -name "*.dump*" -exec rm -- {} +
+  find . -name "*.dump*" -exec rm -- {} +

@@ -3,12 +3,12 @@ Time and size benchmarks for the following Haskell serialization libraries:
 
 | Package                                                            | Laziness | Compatibility             |
 | ---                                                                | ---      | ---                       |
-| [store-0.4.3.1](https://hackage.haskell.org/package/store)         | Strict   | Haskell-Same-Architecture |
-| [packman-0.3.0](http://hackage.haskell.org/package/packman)        | Lazy     | Haskell-Same-Architecture |
-| [cereal-0.5.4.0](http://hackage.haskell.org/package/cereal)        | Strict   | Haskell                   |
-| [binary-0.8.5.1](http://hackage.haskell.org/package/binary)        | Lazy     | Haskell                   |
-| [serialise-0.1.0.0](https://hackage.haskell.org/package/serialise) | Lazy     | Multi-Language            |
-| [flat-0.3](https://github.com/tittoassini/flat)                    | Strict   | Multi-Language            |
+| [store-0.5.0](https://hackage.haskell.org/package/store)           | Strict   | Haskell-Same-Architecture |
+| [packman-0.5.0](https://hackage.haskell.org/package/packman)       | Lazy     | Haskell-Same-Architecture |
+| [cereal-0.5.7.0](https://hackage.haskell.org/package/cereal)       | Strict   | Haskell                   |
+| [binary-0.8.6.0](https://hackage.haskell.org/package/binary)       | Lazy     | Haskell                   |
+| [serialise-0.2.0.0](https://hackage.haskell.org/package/serialise) | Lazy     | Multi-Language            |
+| [flat-0.3.2](https://hackage.haskell.org/package/flat)             | Strict   | Multi-Language            |
 
 Compatibility Levels (lowest to highest):
 * Haskell-Same-Architecture
@@ -52,84 +52,84 @@ Shout if you would like other tests to be added!
 
 ```
 deserialization (time)/BinTree Direction (best first)
-store       1.0
-cereal      1.0
-flat        1.2
-binary      4.8
-serialise   5.6
-packman     6.9
+flat        1.0
+store       1.5
+cereal      2.0
+serialise   7.5
+binary      7.8
+packman     9.4
 
 deserialization (time)/BinTree Int (best first)
 store       1.0
-flat        1.2
+flat        1.0
 cereal      1.2
-binary      3.2
-serialise   3.8
+serialise   3.7
+binary      4.0
 packman     8.3
 
 deserialization (time)/Cars dataset (best first)
 store       1.0
-cereal      1.1
-flat        1.3
-packman     2.1
-binary      4.9
-serialise   5.1
+flat        1.0
+packman     1.9
+cereal      2.2
+serialise   4.0
+binary      4.8
 
 deserialization (time)/Iris dataset (best first)
 store       1.0
-flat        1.8
+flat        1.2
 packman     2.3
-serialise   2.6
-cereal      3.0
-binary     10.1
+serialise   2.4
+cereal      3.3
+binary      8.5
 
 deserialization (time)/[Direction] (best first)
-store       1.0
-cereal      1.1
-flat        1.4
-binary      5.4
-serialise   5.5
-packman     6.7
+flat        1.0
+store       1.2
+cereal      1.7
+binary      6.2
+serialise   6.4
+packman     6.5
 
 serialization (time)/BinTree Direction (best first)
-flat        1.0
-store       3.1
-cereal      7.1
-binary      8.2
-serialise  12.7
-packman    18.1
+store       1.0
+flat        4.0
+cereal      6.9
+binary     13.2
+packman    18.2
+serialise  18.9
 
 serialization (time)/BinTree Int (best first)
-flat        1.0
-store       4.4
-binary     10.9
-cereal     14.2
-serialise  15.9
-packman    30.0
+store       1.0
+flat        7.6
+cereal     12.4
+binary     15.3
+serialise  17.7
+packman    27.1
 
 serialization (time)/Cars dataset (best first)
 store       1.0
-flat        2.0
-serialise   4.2
-binary      6.7
-cereal      7.0
-packman     9.5
+flat        4.0
+cereal      4.2
+serialise   4.7
+binary      8.3
+packman     8.4
 
 serialization (time)/Iris dataset (best first)
 store       1.0
-flat        9.1
-serialise  10.3
-cereal     16.3
-packman    27.0
-binary     90.5
+flat        7.7
+serialise   9.9
+cereal     15.5
+packman    26.5
+binary     82.3
 
 serialization (time)/[Direction] (best first)
-flat        1.0
-store       1.1
-cereal      1.8
-binary      2.2
-serialise   2.2
-packman    12.6
+store       1.0
+cereal      1.9
+flat        3.9
+binary      6.3
+serialise  10.6
+packman    22.0
 
 size (bytes)/BinTree Direction (best first)
 flat        1.0
