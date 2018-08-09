@@ -1,5 +1,5 @@
 name:                serialization
-version:             0.1.1
+version:             0.1.2
 synopsis: Time and size benchmarks for the most popular Haskell serialization libraries
 license-file:        LICENSE
 author:              Ömer Sinan Ağacan
@@ -18,7 +18,7 @@ benchmark all
   other-modules: Dataset,Report
   build-depends:
                 QuickCheck,
-                base               >=4.8   && <4.10,
+                base               >=4.8   && <4.12,
                 binary             >=0.8   && <0.9,
                 serialise,
                 bytestring,
@@ -35,6 +35,5 @@ benchmark all
                 statistics,
                 store >= 0.4
   hs-source-dirs:      src
-  default-language:    Haskell2010
   ghc-options:         -Wall -fno-warn-orphans -O2
   --ghc-options:         -Wall -O2 -ddump-simpl -dsuppress-idinfo -ddump-to-file

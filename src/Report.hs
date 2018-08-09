@@ -2,6 +2,7 @@
 module Report where
 import           Criterion.IO
 import           Criterion.Types
+import           Statistics.Types
 import           Data.Bifunctor
 import           Data.List
 import qualified Data.Map                        as M
