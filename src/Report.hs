@@ -13,6 +13,7 @@ import System.FilePath
 import Control.DeepSeq
 import GHC.Generics
 import Control.Monad
+import Statistics.Types
 
 type Measures = M.Map String Measure
 
