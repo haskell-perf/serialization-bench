@@ -10,6 +10,7 @@ import qualified Data.Flat                  as F
 import qualified Data.Serialize             as C
 import qualified Data.Persist                as R
 import qualified Data.Store                 as S
+import qualified Data.Winery                as W
 import           Numeric.Datasets           (getDataset)
 -- import           Numeric.Datasets.Abalone   (abalone)
 import           Numeric.Datasets.Car
@@ -22,6 +23,8 @@ instance CBOR.Serialise RelScore
 instance F.Flat RelScore
 instance S.Store RelScore
 instance R.Persist RelScore
+instance W.Serialise RelScore where
+  bundleSerialise = W.bundleVariant id
 
 instance NFData RelSize
 instance B.Binary RelSize
@@ -30,6 +33,8 @@ instance CBOR.Serialise RelSize
 instance F.Flat RelSize
 instance S.Store RelSize
 instance R.Persist RelSize
+instance W.Serialise RelSize where
+  bundleSerialise = W.bundleVariant id
 
 instance NFData Acceptability
 instance B.Binary Acceptability
@@ -38,6 +43,8 @@ instance CBOR.Serialise Acceptability
 instance F.Flat Acceptability
 instance S.Store Acceptability
 instance R.Persist Acceptability
+instance W.Serialise Acceptability where
+  bundleSerialise = W.bundleVariant id
 
 instance NFData Count
 instance B.Binary Count
@@ -46,6 +53,8 @@ instance CBOR.Serialise Count
 instance F.Flat Count
 instance S.Store Count
 instance R.Persist Count
+instance W.Serialise Count where
+  bundleSerialise = W.bundleVariant id
 
 deriving instance Eq Car
 instance NFData Car
@@ -55,6 +64,8 @@ instance CBOR.Serialise Car
 instance F.Flat Car
 instance S.Store Car
 instance R.Persist Car
+instance W.Serialise Car where
+  bundleSerialise = W.bundleRecord id
 
 deriving instance Eq Iris
 instance NFData Iris
@@ -64,6 +75,8 @@ instance CBOR.Serialise Iris
 instance F.Flat Iris
 instance S.Store Iris
 instance R.Persist Iris
+instance W.Serialise Iris where
+  bundleSerialise = W.bundleRecord id
 
 instance NFData IrisClass
 instance B.Binary IrisClass
@@ -72,6 +85,8 @@ instance CBOR.Serialise IrisClass
 instance F.Flat IrisClass
 instance S.Store IrisClass
 instance R.Persist IrisClass
+instance W.Serialise IrisClass where
+  bundleSerialise = W.bundleVariant id
 
 -- irisData = iris
 irisData :: [Iris]
