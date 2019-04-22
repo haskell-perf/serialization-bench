@@ -54,6 +54,7 @@ Performance is not the only relevant property, depending on your needs you shoul
 | [serialise-0.2.1.0](https://hackage.haskell.org/package/serialise) | Lazy     | Multi-Language            |
 | [flat-0.3.4](https://hackage.haskell.org/package/flat)             | Strict   | Multi-Language            |
 | [persist-0.1](https://hackage.haskell.org/package/persist)         | Strict   | Haskell            |
+| [winery-1.1.1](https://hackage.haskell.org/package/winery)         | Strict   | Haskell                   |
 
 Compatibility Levels (lowest to highest):
 * Haskell-Same-Architecture
@@ -92,4 +93,3 @@ Try:
 The executable will write the *report.md*, *report.html* and *report.json* files containing the full test results and will print out the two summary results tables in markdown format.
 
 Tests will be compiled with GHC 8.4.4.
-
