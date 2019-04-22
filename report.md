@@ -4,13 +4,14 @@ Results that are within 30% of the best result are displayed in **bold**.
 
 | package | performance |
 | ---| ---|
-| **flat**      |     **1.0** |
 | **persist**   |     **1.0** |
 | **store**     |     **1.1** |
-| cereal    |     3.4 |
-| binary    |     6.7 |
-| serialise |     7.8 |
-| packman   |     8.2 |
+| **winery**    |     **1.1** |
+| **flat**      |     **1.1** |
+| cereal    |     3.7 |
+| binary    |     7.6 |
+| packman   |     8.3 |
+| serialise |     9.0 |
 
 #### deserialization (time)/BinTree Int (best first)
 
@@ -18,107 +19,116 @@ Results that are within 30% of the best result are displayed in **bold**.
 | ---| ---|
 | **store**     |     **1.0** |
 | **persist**   |     **1.0** |
-| **flat**      |     **1.1** |
-| **cereal**    |     **1.1** |
-| binary    |     3.9 |
-| serialise |     4.1 |
-| packman   |     8.4 |
+| **flat**      |     **1.3** |
+| cereal    |     1.3 |
+| winery    |     1.6 |
+| binary    |     4.7 |
+| serialise |     5.6 |
+| packman   |     9.1 |
 
 #### deserialization (time)/Cars (best first)
 
 | package | performance |
 | ---| ---|
 | **persist**   |     **1.0** |
-| **flat**      |     **1.0** |
 | **store**     |     **1.1** |
-| packman   |     2.1 |
-| cereal    |     2.4 |
-| binary    |     5.5 |
-| serialise |     5.9 |
+| **flat**      |     **1.2** |
+| winery    |     1.3 |
+| packman   |     2.4 |
+| cereal    |     3.0 |
+| binary    |     7.1 |
+| serialise |     7.9 |
 
 #### deserialization (time)/Iris (best first)
 
 | package | performance |
 | ---| ---|
 | **store**     |     **1.0** |
-| **persist**   |     **1.2** |
 | **flat**      |     **1.2** |
-| packman   |     2.2 |
-| serialise |     2.7 |
-| cereal    |     3.2 |
-| binary    |     7.6 |
+| **persist**   |     **1.3** |
+| winery    |     2.0 |
+| packman   |     2.5 |
+| serialise |     3.1 |
+| cereal    |     3.8 |
+| binary    |     9.7 |
 
 #### deserialization (time)/[Direction] (best first)
 
 | package | performance |
 | ---| ---|
+| **persist**   |     **1.0** |
 | **flat**      |     **1.0** |
-| **persist**   |     **1.1** |
-| **cereal**    |     **1.3** |
-| **store**     |     **1.3** |
-| binary    |     3.3 |
-| serialise |     4.5 |
-| packman   |     8.1 |
+| **winery**    |     **1.1** |
+| **store**     |     **1.2** |
+| cereal    |     1.3 |
+| binary    |     4.1 |
+| serialise |     4.2 |
+| packman   |     7.9 |
 
 #### serialization (time)/BinTree Direction (best first)
 
 | package | performance |
 | ---| ---|
 | **persist**   |     **1.0** |
-| **store**     |     **1.3** |
-| flat      |     1.4 |
-| cereal    |    13.4 |
-| binary    |    24.5 |
-| packman   |    35.4 |
-| serialise |    37.4 |
+| **store**     |     **1.2** |
+| flat      |     1.5 |
+| winery    |     1.9 |
+| cereal    |    11.0 |
+| binary    |    23.3 |
+| serialise |    33.0 |
+| packman   |    43.1 |
 
 #### serialization (time)/BinTree Int (best first)
 
 | package | performance |
 | ---| ---|
-| **flat**      |     **1.0** |
-| **persist**   |     **1.2** |
-| **store**     |     **1.3** |
-| cereal    |    19.5 |
-| binary    |    23.4 |
-| serialise |    27.8 |
-| packman   |    40.7 |
+| **winery**    |     **1.0** |
+| flat      |     1.3 |
+| store     |     1.4 |
+| persist   |     1.5 |
+| cereal    |    19.9 |
+| binary    |    25.5 |
+| serialise |    30.5 |
+| packman   |    65.0 |
 
 #### serialization (time)/Cars (best first)
 
 | package | performance |
 | ---| ---|
-| **store**     |     **1.0** |
-| flat      |     1.5 |
-| persist   |     2.0 |
-| cereal    |     4.9 |
-| serialise |     6.0 |
-| packman   |     9.7 |
-| binary    |    10.3 |
+| **winery**    |     **1.0** |
+| **store**     |     **1.2** |
+| flat      |     2.3 |
+| persist   |     3.0 |
+| cereal    |     8.0 |
+| packman   |    12.7 |
+| binary    |    16.6 |
+| serialise |    22.7 |
 
 #### serialization (time)/Iris (best first)
 
 | package | performance |
 | ---| ---|
 | **store**     |     **1.0** |
-| flat      |     5.6 |
-| serialise |    12.1 |
-| cereal    |    17.7 |
-| packman   |    28.2 |
-| persist   |    32.8 |
-| binary    |    87.9 |
+| persist   |     3.9 |
+| winery    |     4.5 |
+| flat      |     5.4 |
+| serialise |    15.8 |
+| cereal    |    17.9 |
+| packman   |    27.9 |
+| binary    |    96.6 |
 
 #### serialization (time)/[Direction] (best first)
 
 | package | performance |
 | ---| ---|
-| **persist**   |     **1.0** |
-| **store**     |     **1.1** |
-| **flat**      |     **1.3** |
-| cereal    |     3.9 |
-| binary    |     5.7 |
-| serialise |     9.9 |
-| packman   |    31.5 |
+| **store**     |     **1.0** |
+| **persist**   |     **1.1** |
+| flat      |     1.4 |
+| winery    |     3.1 |
+| cereal    |     4.6 |
+| binary    |     6.6 |
+| serialise |    10.1 |
+| packman   |    36.2 |
 
 #### size (bytes)/BinTree Direction (best first)
 
@@ -129,6 +139,7 @@ Results that are within 30% of the best result are displayed in **bold**.
 | cereal    |     5.5 |
 | persist   |     5.5 |
 | store     |     5.5 |
+| winery    |     5.5 |
 | serialise |    10.9 |
 | packman   |    87.3 |
 
@@ -137,6 +148,7 @@ Results that are within 30% of the best result are displayed in **bold**.
 | package | performance |
 | ---| ---|
 | **flat**      |     **1.0** |
+| winery    |     2.4 |
 | serialise |     4.2 |
 | binary    |     8.0 |
 | cereal    |     8.0 |
@@ -149,6 +161,7 @@ Results that are within 30% of the best result are displayed in **bold**.
 | package | performance |
 | ---| ---|
 | **flat**      |     **1.0** |
+| winery    |     2.6 |
 | serialise |     5.3 |
 | binary    |     6.1 |
 | cereal    |     6.1 |
@@ -162,6 +175,7 @@ Results that are within 30% of the best result are displayed in **bold**.
 | ---| ---|
 | **packman**   |     **1.0** |
 | **flat**      |     **1.0** |
+| **winery**    |     **1.0** |
 | **cereal**    |     **1.0** |
 | **persist**   |     **1.0** |
 | **store**     |     **1.0** |
@@ -173,6 +187,7 @@ Results that are within 30% of the best result are displayed in **bold**.
 | package | performance |
 | ---| ---|
 | **flat**      |     **1.0** |
+| winery    |     2.4 |
 | binary    |     2.4 |
 | cereal    |     2.4 |
 | persist   |     2.4 |
@@ -185,36 +200,39 @@ Results that are within 30% of the best result are displayed in **bold**.
 | package | performance |
 | ---| ---|
 | **flat**      |     **1.0** |
-| persist   |     3.7 |
-| store     |     3.7 |
-| cereal    |     5.2 |
-| binary    |     6.9 |
-| serialise |    11.3 |
-| packman   |    57.0 |
+| persist   |     4.0 |
+| store     |     4.0 |
+| winery    |     4.1 |
+| cereal    |     5.1 |
+| binary    |     6.5 |
+| serialise |    11.0 |
+| packman   |    63.8 |
 
 #### transfer [10 MBits] (time)/BinTree Int (best first)
 
 | package | performance |
 | ---| ---|
 | **flat**      |     **1.0** |
-| serialise |     4.9 |
-| store     |     6.4 |
-| persist   |     6.4 |
-| cereal    |     7.0 |
-| binary    |     7.6 |
-| packman   |    34.6 |
+| winery    |     2.2 |
+| serialise |     4.7 |
+| store     |     6.8 |
+| persist   |     6.8 |
+| cereal    |     7.2 |
+| binary    |     7.7 |
+| packman   |    36.7 |
 
 #### transfer [10 MBits] (time)/Cars (best first)
 
 | package | performance |
 | ---| ---|
 | **flat**      |     **1.0** |
-| store     |     4.9 |
-| persist   |     4.9 |
-| cereal    |     5.2 |
-| serialise |     5.3 |
-| binary    |     6.0 |
-| packman   |     9.2 |
+| winery    |     2.3 |
+| store     |     5.2 |
+| persist   |     5.2 |
+| cereal    |     5.5 |
+| serialise |     5.6 |
+| binary    |     6.1 |
+| packman   |     9.8 |
 
 #### transfer [10 MBits] (time)/Iris (best first)
 
@@ -222,71 +240,77 @@ Results that are within 30% of the best result are displayed in **bold**.
 | ---| ---|
 | **flat**      |     **1.0** |
 | **store**     |     **1.0** |
-| **packman**   |     **1.0** |
 | **persist**   |     **1.0** |
+| **packman**   |     **1.0** |
+| **winery**    |     **1.0** |
 | **cereal**    |     **1.1** |
 | **serialise** |     **1.3** |
-| binary    |     3.3 |
+| binary    |     3.2 |
 
 #### transfer [10 MBits] (time)/[Direction] (best first)
 
 | package | performance |
 | ---| ---|
 | **flat**      |     **1.0** |
-| persist   |     1.9 |
+| persist   |     2.0 |
 | store     |     2.0 |
-| cereal    |     2.1 |
+| winery    |     2.1 |
+| cereal    |     2.2 |
 | binary    |     2.8 |
-| serialise |     4.8 |
-| packman   |    53.2 |
+| serialise |     4.7 |
+| packman   |    58.9 |
 
 #### transfer [100 MBits] (time)/BinTree Direction (best first)
 
 | package | performance |
 | ---| ---|
 | **flat**      |     **1.0** |
-| persist   |     1.6 |
-| store     |     1.7 |
-| cereal    |     4.8 |
-| binary    |     8.5 |
-| serialise |    11.7 |
-| packman   |    21.6 |
+| persist   |     1.7 |
+| store     |     1.8 |
+| winery    |     1.9 |
+| cereal    |     4.4 |
+| binary    |     8.1 |
+| serialise |    11.1 |
+| packman   |    25.7 |
 
 #### transfer [100 MBits] (time)/BinTree Int (best first)
 
 | package | performance |
 | ---| ---|
 | **flat**      |     **1.0** |
-| store     |     2.7 |
-| persist   |     2.7 |
-| cereal    |     4.7 |
-| serialise |     6.5 |
-| binary    |     6.8 |
-| packman   |    19.6 |
+| winery    |     1.6 |
+| store     |     3.2 |
+| persist   |     3.2 |
+| cereal    |     4.8 |
+| serialise |     6.2 |
+| binary    |     6.7 |
+| packman   |    22.9 |
 
 #### transfer [100 MBits] (time)/Cars (best first)
 
 | package | performance |
 | ---| ---|
 | **flat**      |     **1.0** |
-| store     |     2.2 |
-| persist   |     2.2 |
-| cereal    |     3.3 |
-| packman   |     4.8 |
-| serialise |     5.3 |
-| binary    |     5.7 |
+| winery    |     1.5 |
+| store     |     2.5 |
+| persist   |     2.5 |
+| cereal    |     3.7 |
+| packman   |     5.4 |
+| binary    |     6.1 |
+| serialise |     6.5 |
 
 #### transfer [100 MBits] (time)/Iris (best first)
 
 | package | performance |
 | ---| ---|
 | **store**     |     **1.0** |
-| **flat**      |     **1.1** |
-| **persist**   |     **1.3** |
-| packman   |     1.4 |
-| cereal    |     1.5 |
+| **flat**      |     **1.0** |
+| **persist**   |     **1.0** |
+| **winery**    |     **1.1** |
+| packman   |     1.3 |
+| cereal    |     1.4 |
 | serialise |     1.5 |
-| binary    |     4.5 |
+| binary    |     4.3 |
 
 #### transfer [100 MBits] (time)/[Direction] (best first)
 
@@ -295,22 +319,24 @@ Results that are within 30% of the best result are displayed in **bold**.
 | **flat**      |     **1.0** |
 | **persist**   |     **1.3** |
 | store     |     1.4 |
-| cereal    |     1.7 |
-| binary    |     3.4 |
-| serialise |     5.0 |
-| packman   |    21.4 |
+| winery    |     1.5 |
+| cereal    |     1.8 |
+| binary    |     3.7 |
+| serialise |     4.7 |
+| packman   |    25.5 |
 
 #### transfer [1000 MBits] (time)/BinTree Direction (best first)
 
 | package | performance |
 | ---| ---|
-| **flat**      |     **1.0** |
 | **persist**   |     **1.0** |
-| **store**     |     **1.2** |
-| cereal    |     4.7 |
-| binary    |     9.0 |
-| serialise |    11.8 |
-| packman   |    12.9 |
+| **flat**      |     **1.1** |
+| **store**     |     **1.1** |
+| **winery**    |     **1.2** |
+| cereal    |     4.5 |
+| binary    |     9.3 |
+| serialise |    11.9 |
+| packman   |    14.8 |
 
 #### transfer [1000 MBits] (time)/BinTree Int (best first)
 
@@ -319,44 +345,48 @@ Results that are within 30% of the best result are displayed in **bold**.
 | **flat**      |     **1.0** |
 | **store**     |     **1.2** |
 | **persist**   |     **1.2** |
-| cereal    |     3.8 |
-| binary    |     6.5 |
-| serialise |     7.2 |
-| packman   |    13.4 |
+| **winery**    |     **1.2** |
+| cereal    |     3.4 |
+| binary    |     6.2 |
+| serialise |     7.1 |
+| packman   |    15.0 |
 
 #### transfer [1000 MBits] (time)/Cars (best first)
 
 | package | performance |
 | ---| ---|
+| **winery**    |     **1.0** |
 | **flat**      |     **1.0** |
-| **store**     |     **1.1** |
-| **persist**   |     **1.2** |
-| cereal    |     2.6 |
+| **store**     |     **1.0** |
+| **persist**   |     **1.1** |
+| cereal    |     2.8 |
 | packman   |     3.1 |
-| serialise |     5.3 |
-| binary    |     5.6 |
+| binary    |     6.1 |
+| serialise |     7.0 |
 
 #### transfer [1000 MBits] (time)/Iris (best first)
 
 | package | performance |
 | ---| ---|
 | **store**     |     **1.0** |
-| **flat**      |     **1.3** |
-| persist   |     2.1 |
-| serialise |     2.5 |
-| packman   |     2.7 |
-| cereal    |     2.9 |
-| binary    |     8.7 |
+| **persist**   |     **1.2** |
+| **flat**      |     **1.2** |
+| winery    |     1.6 |
+| packman   |     2.6 |
+| serialise |     2.6 |
+| cereal    |     3.0 |
+| binary    |     9.5 |
 
 #### transfer [1000 MBits] (time)/[Direction] (best first)
 
 | package | performance |
 | ---| ---|
+| **persist**   |     **1.0** |
 | **flat**      |     **1.0** |
-| **persist**   |     **1.1** |
 | **store**     |     **1.2** |
-| cereal    |     1.6 |
-| binary    |     3.5 |
-| serialise |     5.1 |
-| packman   |    12.3 |
+| winery    |     1.3 |
+| cereal    |     1.7 |
+| binary    |     4.1 |
+| serialise |     4.7 |
+| packman   |    13.1 |
 
